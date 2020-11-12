@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20201105040314_InitialCreate.cs" />
+    <Compile Remove="Migrations\20201105040314_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20201105063143_InitialCreate.cs" />
+    <Compile Remove="Migrations\20201105063143_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20201105070010_CreatingStorePeocedure.cs" />
+    <Compile Remove="Migrations\20201105070010_CreatingStorePeocedure.Designer.cs" />
+    <Compile Remove="Migrations\20201105070634_CreatingStorePeocedure.cs" />
+    <Compile Remove="Migrations\20201105070634_CreatingStorePeocedure.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Hosting" Version="2.2.7" />
+    <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.2.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="2.2.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.2.6" />
+  </ItemGroup>
+
+</Project>

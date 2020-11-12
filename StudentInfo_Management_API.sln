@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30611.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentInfo_Management_API", "StudentInfo_Management_API\StudentInfo_Management_API.csproj", "{979C1C14-582F-4E70-BAE8-EF2E8430B292}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SIM_Library", "SIM_Library\SIM_Library.csproj", "{3151084E-66BF-4CC6-9068-2F1AA2BAA331}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{979C1C14-582F-4E70-BAE8-EF2E8430B292}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{979C1C14-582F-4E70-BAE8-EF2E8430B292}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{979C1C14-582F-4E70-BAE8-EF2E8430B292}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{979C1C14-582F-4E70-BAE8-EF2E8430B292}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3151084E-66BF-4CC6-9068-2F1AA2BAA331}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3151084E-66BF-4CC6-9068-2F1AA2BAA331}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3151084E-66BF-4CC6-9068-2F1AA2BAA331}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3151084E-66BF-4CC6-9068-2F1AA2BAA331}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {38C8FB86-5E99-46DA-ACEA-E4A14835CF01}
+	EndGlobalSection
+EndGlobal
