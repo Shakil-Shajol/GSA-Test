@@ -44,7 +44,7 @@ namespace StudentInfo_Management_API
             {
                 app.UseDeveloperExceptionPage();
             }
-
+            app.UseStaticFiles();
             app.UseMvc();
         }
     }
