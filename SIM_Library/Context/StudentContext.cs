@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using SIM_Library.DTO;
 using SIM_Library.Models;
 using System;
 using System.Collections.Generic;
@@ -14,5 +15,8 @@ namespace SIM_Library.Context
         }
         public DbSet<Student> Students { get; set; }
         public DbSet<Gender> Genders { get; set; }
+        public DbQuery<StudentOutDTO> StudentView { get; set; }
+
+
     }
 }

@@ -33,7 +33,7 @@ namespace StudentInfo_Management_API
             });
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             services.AddDbContext<StudentContext>(opt => opt.UseSqlServer(Configuration.GetConnectionString("connectionString")));
-            services.AddScoped<IStudentRepo, MockStudentRepo>();
+            services.AddScoped<IStudentRepo, SqlStudentRepo>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

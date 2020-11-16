@@ -6,12 +6,21 @@ namespace SIM_Library.Migrations
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
+			migrationBuilder.InsertData(
+							table: "Genders",
+							columns: new[] { "GenderName" },
+							values: new object[] { "Male" });
+			migrationBuilder.InsertData(
+							table: "Genders",
+							columns: new[] { "GenderName" },
+							values: new object[] { "Female" });
+
 			string getProcedureById = @"CREATE PROCEDURE spGetStudentById
 								@Id int
 							AS
 							BEGIN
 								SELECT
-								S.StudentId,S.StudentName,S.DateOfBirth,G.GenderId,G.GenderName,S.PicturePath
+								S.StudentId,S.StudentName,S.DateOfBirth,G.GenderId,G.GenderName as Gender,S.PicturePath
 								FROM Students S
 								JOIN Genders G 
 								ON
@@ -24,7 +33,7 @@ namespace SIM_Library.Migrations
 						AS
 						BEGIN
 							SELECT
-							S.StudentId,S.StudentName,S.DateOfBirth,G.GenderId,G.GenderName,S.PicturePath
+							S.StudentId,S.StudentName,S.DateOfBirth,G.GenderId,G.GenderName as Gender,S.PicturePath
 							FROM Students S
 							JOIN Genders G 
 							ON
